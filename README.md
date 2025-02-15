@@ -1,1 +1,2 @@
-# Peronal-Portfolio-Website
+# Personal-Portfolio-Website
+This repository contains the source code for my personal portfolio website—a modern, responsive, and interactive platform that showcases my projects, skills, and experiences. Built with HTML, CSS, and JavaScript, the website is designed with clean aesthetics and smooth animations to provide an engaging user experience.
