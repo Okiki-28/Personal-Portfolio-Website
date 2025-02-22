@@ -1,0 +1,95 @@
+@media only screen and (max-width: 750px) {
+    section h1 {
+        font-size: 50px;
+    }
+
+    header {
+        border-bottom: 2px solid #ffffff50;
+    }
+    
+    #global-header {
+        justify-content: center;
+    }
+
+    #global-header nav {
+        display: none;
+    }
+
+
+    .home-box{
+        height: 100%;
+    }
+
+    #home-cont {
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    #greeting {
+        flex-basis: 70%;
+        padding: 30px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #greeting h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #greeting p {
+        font-size: 20px;
+    }
+
+    #greeting .btn {
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #home-img img {
+        height: 25vh;
+    }
+
+    section .page-nav {
+        display: none;
+    }
+
+    .about-cards {
+        flex-wrap: wrap;
+    }
+
+    #education {
+        flex-direction: column-reverse;
+    }
+
+
+    .project-card {
+        flex-basis: 40%;
+        box-shadow: 5px 5px 0px 1px black;
+    }
+
+    .service-group {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    .service-card {
+        flex-basis: 90%;
+        margin: auto;
+        height: 50vh;
+    }
+
+    .service-card::before {
+        background: #00000070;
+    }
+
+    .contact a {
+        font-size: 20px;
+    }
+}

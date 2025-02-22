@@ -113,7 +113,7 @@ section .page-nav {
 .home {
     background: url(Images/Home\ BG2.png);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 14vh;
@@ -128,7 +128,6 @@ section .page-nav {
 }
 
 #home-cont {
-    position: absolute;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -189,7 +188,7 @@ section .page-nav {
 }
 
 #home-img img {
-    height: 85%;
+    height: 60vh;
     border: 2px solid #e3ded7;
     border-radius: 15px;
     box-shadow: 0px 0px 20px black;
@@ -319,6 +318,7 @@ section .page-nav {
 .project-card h2 {
     font-size: 30px;
     margin: 0px;
+    text-align: center;
 }
 
 /* -----Services------ */
