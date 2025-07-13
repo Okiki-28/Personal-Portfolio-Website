@@ -1,0 +1,512 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: Georgia, serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #11111150;
+    margin: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem; 
+}
+
+.nav-bar .nav-links,
+.nav-bar .social-media-links {
+    flex-basis: 30%;
+}
+
+.nav-bar .logo {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 15px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-links i {
+    font-size: 20px;
+    margin: 0 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+section.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.hero .hero-content {
+    padding: 15vh 0;
+    text-align: center;
+}
+
+section.hero .hero-content h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+    font-weight: 100;
+}
+
+section.hero .hero-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 4rem 10rem;
+}
+
+section.hero .hero-info .briefing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 25%;
+}
+
+section.hero .hero-info .briefing .biography h2,
+section.hero .hero-info .briefing .clients h2 {
+    margin-top: 0;
+}
+
+
+section.hero .hero-info .briefing h2 {
+    font-size: 1.2rem;
+    margin: 3rem 0 1.5rem;
+    color: #11111150;
+}
+
+section.hero .hero-info .briefing p,
+section.hero .hero-info .briefing address,
+section.hero .hero-info .briefing a,
+section.hero .hero-info .briefing ul {
+    font-size: 1.2em;
+    line-height: var(--line-height);
+    width: 80%;
+}
+
+section.hero .hero-info .briefing ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.hero .hero-info .briefing address {
+    font-style: normal;
+}
+
+section.hero .hero-info .briefing a {
+    color: black;
+    text-decoration: none;
+}
+
+section.hero .hero-info .hero-image {
+    aspect-ratio: 1 / 1.25;
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    align-self: center;
+    border-radius: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    border: 1px solid #11111150;
+}
+
+section.hero .hero-info .hero-image .image {
+    flex-basis: 90%;
+    aspect-ratio: 1 / 1.25;
+    background: url("Images/me.png");
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    border-radius: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid #11111150;
+}
+
+section.hero .hero-info .briefing.right p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+section.hero .hero-info .briefing.right h2 {
+    text-align: center;
+}
+
+section.hero .hero-info .briefing.right p {
+    text-align: center;
+    width: 100%;
+}
+
+section.hero .work-experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+section.hero .work-experience .logo {
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+}
+
+section.hero .work-experience .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.advantage {
+    margin: 4rem;
+}
+
+section.advantage h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+section.advantage .tab-group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section.advantage .tab-group .tab .software-image {
+    width: 150px;
+    height: 250px;
+    margin: 2rem 0;
+    background-color: #11111120;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+section.advantage .tab-group .tab .software-image img {
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+section.advantage .tab-group .tab .software-image p {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+section.advantage .tab-group .tab p {
+    text-align: center;
+}
+
+section.education h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+section.education .tab-group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 4rem;
+}
+
+section.education .tab-group .tab {
+    flex-basis: 30%;
+    padding: 2rem;
+}
+
+section.education .tab-group .tab h2 {
+    font-size: 1.2rem;
+    margin-bottom: 3em;
+    color: #11111150;
+    font-weight: 100;
+}
+
+section.education .tab-group .tab h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+section.education .tab-group .tab h4 {
+    font-size: 1.2rem;
+    line-height: var(--line-height);
+    margin-bottom: 3rem;
+    font-weight: 100;
+}
+
+section.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.projects h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+section.projects .tab-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    position: relative;
+}
+
+section.projects .tab-group .tab {
+    flex-basis: 32%;
+    flex-shrink: 0;
+    padding: 1rem;
+    border: 1px solid #11111120;
+}
+
+section.projects .tab-group .tab .image {
+    width: 100%;
+    aspect-ratio: 1 / 1.3;
+    margin-bottom: 2rem;
+    border: 1px solid #11111120;
+}
+
+section.projects .tab-group .tab .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+section.projects .tab-group .tab p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #11111180;
+    font-weight: 100;
+}
+
+section.projects .tab-group .tab h2 {
+    font-size: 1.6rem;
+    color: #11111180;
+    font-weight: 100;
+}
+
+section.projects .container {
+    position: relative;
+    width: 85vw;
+}
+
+section.projects .container .btn {
+    position: absolute;
+    border: 2px solid #11111150;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+section.projects .container .btn.left {
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.projects .container .btn.right {
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 6rem;
+}
+
+section.reviews q {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    margin: 0 6rem;
+    font-style: italic;
+    text-align: center;
+}
+
+section.reviews .client-name {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+section.reviews p span {
+    margin-top: 1rem;
+}
+
+section.reviews p span a {
+    color: dodgerblue;
+}
+
+section.reviews .nav-circles {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+section.reviews .nav-circles input[type="radio"] {
+    scale: 1.5;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+section.reviews .instagram-cta {
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+section.reviews .instagram-cta:hover {
+    color: var(--primary-color);
+}
+
+section.reviews .instagram-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+section.reviews .instagram-images .image {
+    width: 215px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border: 1px solid #11111120;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.reviews .instagram-images .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    opacity: 0.8;
+}
+
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+section.contact .contact-cta {
+    aspect-ratio: 1 / 1;
+    height: 65%;
+    border: 2px dotted #11111150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+section.contact .contact-cta .contact-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("Images/polka.jpg");
+    background-position: center;
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+section.contact .contact-cta .contact-text {
+    text-align: left;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact .contact-cta p {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+section.contact .contact-cta a {
+    font-size: 5rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+section.contact .contact-cta i {
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+
+.footer-hr {
+    margin-bottom: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6rem;
+}
