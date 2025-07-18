@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --primary-color: #640D5F;
+    --secondary-color: #EB5B00;
     --font-family: Georgia, serif;
     --font-size: 16px;
     --line-height: 1.5;
@@ -56,6 +56,10 @@ a {
     text-decoration: none;
 }
 
+.nav-links li a:hover {
+    color: var(--secondary-color);
+}
+
 .logo img {
     max-width: 100px;
 }
@@ -70,6 +74,12 @@ a {
     margin: 0 1rem;
     color: black;
     cursor: pointer;
+}
+
+.social-media-links i:hover {
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 section.hero {
